@@ -1,4 +1,27 @@
 
+@keyframes navMenu{
+    from {
+        background-color: #0047d6;
+        color: white;
+    }
+    to {
+        background-color: white;
+        color: #000;
+    }
+}
+
+@keyframes masInfo{
+    from{
+        background-color: white;
+        color: #000;
+    }
+
+    to{
+        background-color: rgb(255, 213, 0);
+        color: #000;
+    }
+}
+
 *{
     margin: auto 0;
 }
@@ -50,6 +73,17 @@ nav a{
     margin: 10px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+}
+
+nav li a:hover{
+    animation-name: navMenu;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+nav li a:active{
+    background-color: rgba(255, 213, 0, 0.801);
+    color: #000;
 }
 
 main{
@@ -120,6 +154,12 @@ main{
     padding: 10px;
 }
 
+.information a:hover{
+    animation-name: masInfo;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
 footer{
     background-color: #000000c4;
     height: 100px;
@@ -127,6 +167,7 @@ footer{
     color: white;
     display: flex;
     flex-direction: column;
+
 }
 
 footer p{
